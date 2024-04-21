@@ -23,6 +23,8 @@ Pod::Spec.new do |s|
                     :git => 'https://github.com/moengage/MoEngage-iOS-SDK.git', 
                     :tag => 'moengage-' + s.version.to_s 
                     }
+  s.resource_bundles = { 'MoEngage-iOS-SDK' => ['Frameworks/MoEngageSDK.xcframework/*/MoEngageSDK.framework/PrivacyInfo.xcprivacy
+'] }
                     
   s.ios.vendored_frameworks = 'Frameworks/MoEngageSDK.xcframework','Frameworks/MoEngageCore.xcframework', 'Frameworks/MoEngageAnalytics.xcframework', 'Frameworks/MoEngageMessaging.xcframework','Frameworks/MoEngageObjCUtils.xcframework', 'Frameworks/MoEngageSecurity.xcframework'
   s.tvos.vendored_frameworks = 'Frameworks/MoEngageSDK.xcframework','Frameworks/MoEngageCore.xcframework', 'Frameworks/MoEngageAnalytics.xcframework', 'Frameworks/MoEngageMessaging.xcframework', 'Frameworks/MoEngageObjCUtils.xcframework', 'Frameworks/MoEngageSecurity.xcframework'
